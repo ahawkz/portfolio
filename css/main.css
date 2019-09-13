@@ -8,18 +8,25 @@ header {
   justify-content: space-between;
   align-items: center;
   margin: 0 5px;
+  padding: 5px;
   height: 5vh;
   background: ghostwhite;
 }
 /* === NAVIGATION === */
-nav{
+span {
+  color: #D20384;
+  font-weight: 900;
 }
 .nav-item {
   padding: 10px;
   text-decoration: none;
+  color: black;
+}
+.nav-item:hover{
+  color: #D20384;
 }
 
-/* === SLIDEs === */
+/* === SLIDES === */
 .slide {
   height: 100vh;
   width: 100vw;
@@ -32,7 +39,8 @@ nav{
   align-items: center;
   height: 100vh;
   width: 100vw;
-  background: yellow;
+  background: #0A2844;
+  color: white;
 }
 .slide-one{
   position: absolute;
@@ -45,8 +53,23 @@ nav{
 .slide-one-text h1{
   margin: 0;
   font-size: 4em;
+  color: #D20384;
 }
 .slide-one-text h5 {
   margin-top: 0;
   font-size: 1.5em;
+  font-weight: 100;
+}
+/* see work button */
+.see-work-btn{
+  color: white;
+  border: 1px solid white;
+}
+.see-work-btn:hover {
+  color: #D20384;
+  border: 1px solid #D20384;
+}
+.see-work-btn:focus{
+  color: black;
+  border: 1px solid white;
 }
