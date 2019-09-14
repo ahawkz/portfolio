@@ -1,7 +1,11 @@
-/* === IMPORTED FONTS === */
+/* ================================ */
+/* ====== IMPORTED FONTS ========== */
+/* ================================ */
 @import url('https://fonts.googleapis.com/css?family=Lora|Playfair+Display&display=swap');
 
-/* === VARIABLES === */
+/* ================================ */
+/* ========== VARIABLES ============== */
+/* ================================ */
 :root {
   --main-font: 'Lora';
   --paragraph-font: 'Playfair Display';
@@ -10,15 +14,22 @@
   --gray: #f2f5f7;
 }
 
-/* === GENERAL === */
+/* ================================ */
+/* ========== GENERAL ============= */
+/* ================================ */
 body {
   margin: 0px;
   text-align: center;
   font-family: var(--main-font);
 }
+.slide {
+  height: 100vh;
+  width: 100vw;
+}
 
-
-/* === HEADER === */
+/* ================================ */
+/* ========== HEADER ============== */
+/* ================================ */
 header {
   display: flex;
   justify-content: space-between;
@@ -28,7 +39,10 @@ header {
   min-height: 5vh;
   background: ghostwhite;
 }
-/* === NAVIGATION === */
+
+/* ============================= */
+/* ======= NAVIGATION ========== */
+/* ============================= */
 span {
   color: var(--pink);
   font-weight: 900;
@@ -57,13 +71,10 @@ span {
   color: #D20384;
 }
 
-/* === SLIDES === */
-.slide {
-  height: 100vh;
-  width: 100vw;
-}
+/* ================================ */
+/* ========= LANDING PAGE ========= */
+/* ================================ */
 
-/* slide one */
 .slide-one-wrapper {
   display: flex;
   flex-direction: column;
@@ -107,7 +118,10 @@ span {
   border: 1px solid white;
 }
 
-/* SLIDE TWO -- ABOUT  */
+/* ================================ */
+/* ===== SLIDE TWO -- ABOUT ======= */
+/* ================================ */
+
 #about h1 {
   margin-top: 50px;
 }
@@ -127,14 +141,20 @@ hr {
   border-radius: 10px;
 }
 
+/* ================================ */
 /* === SLIDE THREE -- PROJECTS === */
+/* ================================ */
+
 .projects {
   background-color: var(--gray);
-  border: 1px solid var(--gray);
+  /* border: 1px solid var(--gray); */
   height: 150vh;
 }
 #projects h1 {
-  margin-top: 50px;
+  padding-top: 50px;
+}
+.project-cards {
+  padding-top: 30px;
 }
 .project-one {
   background-image: url('../images/wethebestgifs.png');
@@ -165,6 +185,15 @@ hr {
   background-size: cover;
   height: 25vh;
 }
+.photo-text {
+  opacity: 0;
+  background-color: white;
+  height: 25vh;
+}
+.six:hover .photo-text{
+  box-shadow: 0 0 10px #ccc;
+  opacity: 100;
+}
 .six {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -179,17 +208,35 @@ hr {
   text-shadow: 1px 1px 2px black;
   cursor: pointer;
 }
+/* ================================ */
 /* === SLIDE FOUR -- RESUME ===  */
+/* ================================ */
+#resume h1 {
+  padding-top: 50px;
+}
 
+/* ============================== */
 /* === SLIDE FIVE -- CONTACT === */
+/* ============================= */
 .contact {
   background-color: var(--gray);
 }
-/* === FOOTER ===  */
+#contact h1 {
+  padding-top: 50px;
+}
+/* ========================= */
+/* ======== FOOTER ========= */
+/* ========================= */
 footer {
   background: gray;
 }
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ================================= */
 /* ========  MEDIA QUERIES ========= */
+/* ================================= */
+
 @media screen and (min-width: 600px) {
   /* === NAV === */
   #main-nav{

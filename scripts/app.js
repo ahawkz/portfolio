@@ -1,7 +1,7 @@
 // onload
 $(() => {
 
-  // === VENT HANDLERS === //
+  // === EVENT HANDLERS === //
   //scroll between slides -- code help from attacomsian.com
   $('#main-nav').on('click', 'a[href^="#"]', function(event) {
     var targetHref = $(this).attr('href');
