@@ -21,7 +21,11 @@ $(() => {
   });
 
   //nav bar
-
+  $('.navbar-toggle').on('click', () => {
+    //change display to be show
+    $('#main-nav').toggle();
+    $('.navbar-toggle').toggleClass('rotate');
+  })
 
 
 }); //end onload
