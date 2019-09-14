@@ -1,21 +1,37 @@
+/* === IMPORTED FONTS === */
+@import url('https://fonts.googleapis.com/css?family=Lora|Playfair+Display&display=swap');
+
+/* === VARIABLES === */
+:root {
+  --main-font: 'Lora';
+  --paragraph-font: 'Playfair Display';
+  --blue: #03C9C7;
+  --pink: #D20384;
+}
+
+/* === GENERAL === */
+
 body {
   margin: 0px;
   text-align: center;
+  font-family: var(--main-font);
 }
 /* === HEADER === */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 5px;
+  margin: 0;
   padding: 5px;
   height: 5vh;
   background: ghostwhite;
 }
 /* === NAVIGATION === */
 span {
-  color: #D20384;
+  color: var(--pink);
   font-weight: 900;
+  font-size: 2em;
+  padding-left: 5px;
 }
 .nav-item {
   padding: 10px;
@@ -64,6 +80,8 @@ span {
 .see-work-btn{
   color: white;
   border: 1px solid white;
+  font-family: var(--main-font);
+  font-size: 1em;
 }
 .see-work-btn:hover {
   color: #D20384;
@@ -73,3 +91,5 @@ span {
   color: black;
   border: 1px solid white;
 }
+
+/* SLIDE TWO */
