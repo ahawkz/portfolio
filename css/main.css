@@ -33,6 +33,9 @@ span {
   font-size: 2em;
   padding-left: 5px;
 }
+#main-nav{
+  display: none;
+}
 .nav-item {
   padding: 10px;
   text-decoration: none;
@@ -93,3 +96,6 @@ span {
 }
 
 /* SLIDE TWO */
+
+
+/* ========  MEDIA QUERIES ========= */

@@ -1,7 +1,7 @@
 // onload
 $(() => {
 
-  // event handlers
+  // === VENT HANDLERS === //
   //scroll between slides -- code help from attacomsian.com
   $('#main-nav').on('click', 'a[href^="#"]', function(event) {
     var targetHref = $(this).attr('href');
@@ -11,7 +11,7 @@ $(() => {
     event.preventDefault();
   });
 
-  //see my work button
+  //'see my work' button
   $('.slide-one-wrapper').on('click', 'a[href^="#"]', function(event) {
     var targetHref = $(this).attr('href');
     $('html, body').animate({
@@ -19,6 +19,9 @@ $(() => {
     }, 300);
     event.preventDefault();
   });
+
+  //nav bar
+
 
 
 }); //end onload
