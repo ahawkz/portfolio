@@ -185,23 +185,47 @@ hr {
   background-size: cover;
   height: 25vh;
 }
+.six {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* === hover text === */
 .photo-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   opacity: 0;
   background-color: white;
   height: 25vh;
+  transition: 0.7s;
+  font-family: var(--paragraph-font);
+  padding: 5px;
+}
+.photo-text h5 {
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 1em;
+  color: var(--pink);
+}
+.photo-text button {
+  border-color: var(--blue);
+  border-radius: 0;
+}
+.photo-text button:hover {
+  background-color: var(--blue);
+  color: white;
+  transition: 0.5s;
 }
 .six:hover .photo-text{
   box-shadow: 0 0 10px #ccc;
   opacity: 100;
 }
-.six {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
+/* === github icon === */
 .fa-github {
   font-size: 400%;
   margin-top: 70px;
   text-shadow: 1px 1px 2px var(--pink);
+  color: black;
 }
 .fa-github:hover{
   color: var(--pink);
