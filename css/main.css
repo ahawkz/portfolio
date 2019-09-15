@@ -235,7 +235,7 @@ hr {
 /* === SLIDE FOUR -- RESUME ===  */
 /* ================================ */
 .resume {
-  height: 200vh;
+  height: 150vh;
 }
 #resume h1 {
   padding-top: 50px;
@@ -278,6 +278,18 @@ hr {
 }
 .job-description {
   color: gray;
+}
+/* === linkedin icon === */
+.fa-linkedin {
+  font-size: 400%;
+  margin-top: 70px;
+  text-shadow: 1px 1px 2px var(--pink);
+  color: black;
+}
+.fa-linkedin:hover{
+  color: var(--pink);
+  text-shadow: 1px 1px 2px black;
+  cursor: pointer;
 }
 /* ============================== */
 /* === SLIDE FIVE -- CONTACT === */
