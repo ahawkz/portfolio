@@ -1,17 +1,18 @@
 /* ================================ */
 /* ====== IMPORTED FONTS ========== */
 /* ================================ */
-@import url('https://fonts.googleapis.com/css?family=Lora|Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lora|Roboto+Condensed&display=swap');
 
 /* ================================ */
 /* ========== VARIABLES ============== */
 /* ================================ */
 :root {
   --main-font: 'Lora';
-  --paragraph-font: 'Playfair Display';
+  --paragraph-font: 'Roboto Condensed';
   --blue: #03C9C7;
   --pink: #D20384;
   --gray: #f2f5f7;
+  --navy: #0A2844;
 }
 
 /* ================================ */
@@ -220,13 +221,13 @@ hr {
   opacity: 100;
 }
 /* === github icon === */
-.fa-github {
+.fa-github-square {
   font-size: 400%;
   margin-top: 70px;
   text-shadow: 1px 1px 2px var(--pink);
   color: black;
 }
-.fa-github:hover{
+.fa-github-square:hover{
   color: var(--pink);
   text-shadow: 1px 1px 2px black;
   cursor: pointer;
@@ -246,6 +247,7 @@ hr {
   flex-direction: column;
   align-items: center;
   text-align: left;
+  font-family: var(--paragraph-font);
 }
 .four h4 {
   font-weight: 800;
@@ -261,6 +263,7 @@ hr {
   flex-direction: column;
   align-items: center;
   text-align: left;
+  font-family: var(--paragraph-font);
 }
 .eight {
   padding-top: 15px;
@@ -268,6 +271,7 @@ hr {
   flex-direction: column;
   text-align: left;
   align-self: flex-start;
+  font-family: var(--paragraph-font);
 }
 .title{
   font-weight: 800;
@@ -276,7 +280,7 @@ hr {
 .job-company {
   font-size: 1.25em;
 }
-.job-description {
+.description {
   color: gray;
 }
 /* === linkedin icon === */
@@ -296,15 +300,45 @@ hr {
 /* ============================= */
 .contact {
   background-color: var(--gray);
+  height: 50vh;
 }
 #contact h1 {
   padding-top: 50px;
+}
+.contact-box{
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact-button{
+  border-color: var(--pink);
+  border-radius: 0;
+  font-family: var(--paragraph-font);
+}
+.contact-button:hover{
+  background-color: var(--pink);
+  color: white;
+  transition: 0.9s;
+  border: none;
 }
 /* ========================= */
 /* ======== FOOTER ========= */
 /* ========================= */
 footer {
-  background: gray;
+  background-color: var(--navy);
+  height: 15vh;
+  color: gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  font-family: var(--paragraph-font);
+}
+.social-icons i{
+  padding: 0 10px;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -341,6 +375,6 @@ footer {
   }
     /* === RESUME SLIDE === */
   .resume {
-    height: 150vh
+    height: 180vh;
   }
 }
