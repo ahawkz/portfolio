@@ -336,9 +336,15 @@ footer {
 }
 footer p {
   font-family: var(--paragraph-font);
+  margin-bottom: 15px;
 }
 .social-icons i{
   padding: 0 10px;
+  margin-top: 0;
+  color: var(--gray);
+}
+.social-icons i:hover{
+  color: var(--pink);
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
