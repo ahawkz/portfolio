@@ -147,7 +147,6 @@ hr {
 
 .projects {
   background-color: var(--gray);
-  /* border: 1px solid var(--gray); */
   height: 150vh;
 }
 #projects h1 {
@@ -235,10 +234,51 @@ hr {
 /* ================================ */
 /* === SLIDE FOUR -- RESUME ===  */
 /* ================================ */
+.resume {
+  height: 200vh;
+}
 #resume h1 {
   padding-top: 50px;
 }
-
+.four {
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+.four h4 {
+  font-weight: 800;
+  align-self: flex-start;
+  color: var(--pink);
+}
+.proficient-in, .experience-with {
+  padding-top: 10px;
+}
+.seven {
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+.eight {
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-self: flex-start;
+}
+.title{
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.job-company {
+  font-size: 1.25em;
+}
+.job-description {
+  color: gray;
+}
 /* ============================== */
 /* === SLIDE FIVE -- CONTACT === */
 /* ============================= */
