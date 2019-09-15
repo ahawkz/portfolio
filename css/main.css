@@ -235,7 +235,7 @@ hr {
 /* === SLIDE FOUR -- RESUME ===  */
 /* ================================ */
 .resume {
-  height: 150vh;
+  height: 210vh;
 }
 #resume h1 {
   padding-top: 50px;
@@ -333,10 +333,14 @@ footer {
   .headshot{
     max-width: 25%;
   }
-  /* === PROJECTS SLIDE ===  */
+  /* === PROJECTS SLIDE === */
   .projects {
     background-color: var(--gray);
     border: 1px solid var(--gray);
     height: 100vh;
+  }
+    /* === RESUME SLIDE === */
+  .resume {
+    height: 150vh
   }
 }
