@@ -13,6 +13,7 @@
   --pink: #D20384;
   --gray: #f2f5f7;
   --navy: #0A2844;
+  --image-url: url('../images/philly.jpg');
 }
 
 /* ================================ */
@@ -59,8 +60,6 @@ span {
   transition: all .5s linear;
 }
 .rotate{
-  -moz-transform:rotate(90deg);
-  -webkit-transform:rotate(90deg);
   transform:rotate(90deg);
 }
 .nav-item {
@@ -84,6 +83,15 @@ span {
   width: 100vw;
   background: #0A2844;
   color: white;
+}
+.tinted-image {
+  background:
+    linear-gradient(
+      rgba(10, 40, 68, 0.90),
+      rgba(10, 40, 68, 0.95)
+      ),
+    var(--image-url) center center;
+  background-size: cover;
 }
 .slide-one{
   position: absolute;
