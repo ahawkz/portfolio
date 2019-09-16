@@ -29,19 +29,19 @@ $(() => {
   })
 
   // scroll to top button -- code help from getflywheel.com and templatemonster.com
-  const top = $('#top');
-
-  $(window).scroll(function(){
-    if ($(window).scrollTop() > 300) {
-      top.addClass('top-page show');
-    } else {
-      top.removeClass('top-page show');
-    }
-  });
-
-  top.on('click', (event) => {
-    event.preventDefault();
-    $('html, body').animate({scrollTop:0}, '300');
-  });
+  // const top = $('#top');
+  //
+  // $(window).scroll(function(){
+  //   if ($(window).scrollTop() > 300) {
+  //     top.addClass('top-page show');
+  //   } else {
+  //     top.removeClass('top-page show');
+  //   }
+  // });
+  //
+  // top.on('click', (event) => {
+  //   event.preventDefault();
+  //   $('html, body').animate({scrollTop:0}, '300');
+  // });
 
 }); //end onload
