@@ -24,7 +24,7 @@ $(() => {
   //nav bar
   $('.fa-bars').on('click', () => {
     //change display to be show
-    // $('#main-nav').toggle();
+    $('#main-nav').toggle();
     $('.navbar-toggle').toggleClass('rotate');
   })
 
