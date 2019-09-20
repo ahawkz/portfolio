@@ -2,6 +2,7 @@
 
 ## Live Site
 https://elegant-lumiere-8131e2.netlify.com
+https://www.alexhawkins.dev/
 
 ## Unsolved problems
 * navigation toggle for mobile needs to be fixed. On desktop if you toggle then expand the screen the nav is hidden completely.
